@@ -5,7 +5,22 @@
 	Spatial by TEMPLATED
 	templated.co @templatedco
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+
+	Modified by Tianxin Li
 */
+
+/* 
+Some Animations to make the transition look smoother. 
+*/
+
+.lazy {
+opacity: 1;
+    transition: opacity .1s;
+    transition-property: opacity;
+    transition-duration: 0.1s;
+    transition-timing-function: ease;
+	transition-delay: 0s;
+}
 
 /* Reset */
 
@@ -1602,7 +1617,7 @@
 	}
 
 	body, input, select, textarea {
-		font-family: "Raleway", Arial, Helvetica, sans-serif;
+		font-family: "roboto", Arial, Helvetica, sans-serif;
 		font-size: 13pt;
 		font-weight: 400;
 		line-height: 2em;
@@ -1675,7 +1690,7 @@
 		font-weight: 700;
 		line-height: 1em;
 		margin: 0 0 1em 0;
-		text-transform: uppercase;
+		text-transform: none;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -2301,6 +2316,24 @@
 			display: block;
 		}
 
+		
+		svg.defs {
+			position: absolute;
+			width: 0;
+			height: 0;
+		}
+		
+		
+		.image.squircle {
+			display: block;
+			margin: 0 0 2em 0;
+			width: 100%;
+			height: 100;
+			background: url("../../images/gooseUW.jpg") center / cover, #aaa;
+			clip-path: url(#squircle);
+		}
+
+
 		.image.left, .image.right {
 			max-width: 40%;
 		}
@@ -2329,6 +2362,7 @@
 
 			.image.fit img {
 				width: 100%;
+				border-radius: 50px;
 			}
 
 		.image.rounded {
@@ -2561,7 +2595,7 @@
 		color: #aaa;
 		position: relative;
 		margin: 0 0 1.5em 0;
-		text-transform: uppercase;
+		text-transform: none;
 	}
 
 	header h2 + p {
@@ -2735,7 +2769,7 @@
 
 		.wrapper.style3 {
 			background-attachment: fixed;
-			background-image: url("images/overlay.png"), url("../../images/banner.jpg");
+			background-image: url("images/overlay.png"), url("../../images/yosemite.JPG");
 			background-position: center center;
 			background-size: cover;
 		}
@@ -3089,8 +3123,10 @@
 
 	#banner {
 		padding: 16em 0 13em 0;
+		height: 100vh;
 		background-attachment: fixed;
-		background-image: url("images/overlay.png"), url("../../images/banner.jpg");
+		background-repeat: no-repeat;
+		background-image: url("images/overlay.png"), url("../../images/yosemite.JPG");
 		background-position: center top;
 		background-size: cover;
 		line-height: 1.75;
@@ -3113,7 +3149,7 @@
 			color: #aaa;
 			font-size: 1.5em;
 			margin-bottom: 1.75em;
-			text-transform: uppercase;
+
 		}
 
 		@media screen and (max-width: 1280px) {
