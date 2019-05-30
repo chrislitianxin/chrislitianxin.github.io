@@ -1617,8 +1617,8 @@ opacity: 1;
 	}
 
 	body, input, select, textarea {
-		font-family: "roboto", Arial, Helvetica, sans-serif;
-		font-size: 13pt;
+		font-family: 'Roboto', Arial, Helvetica, sans-serif;
+		font-size: 14pt;
 		font-weight: 400;
 		line-height: 2em;
 	}
@@ -1664,12 +1664,19 @@ opacity: 1;
 		}
 
 	a {
-		text-decoration: underline;
-		color: #f32853;
-	}
+		text-decoration: none;
 
-		a:hover {
+	}
+		a h4 {
+			transition: color 0.5s ease;
+			
+		}
+
+		a h4:hover {
 			text-decoration: none;
+			color: #8696a7;
+			transition: color 0.5s ease;
+
 		}
 
 	strong, b {
@@ -1683,6 +1690,29 @@ opacity: 1;
 
 	p {
 		margin: 0 0 2em 0;
+	}
+
+	h1 {
+		font-size: 5em;
+		font-family: 'Roboto'; 
+		font-weight: 500!important; 
+		color: white !important;
+		text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+		margin: 2%!important;
+	}
+
+	@media screen and (max-width: 480px) {
+
+		h1 {
+			font-size: 48px;
+		}
+
+	}
+
+	h2.intro {
+		padding-right: 20%; font-family: 'Marck Script', cursive;
+		text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -2372,6 +2402,8 @@ opacity: 1;
 			.image.rounded img {
 				border: solid 0.5em rgba(144, 144, 144, 0.25);
 				border-radius: 100%;
+				width: 169px;
+				height: 169px;
 			}
 
 		.image.captioned {
@@ -2981,6 +3013,7 @@ opacity: 1;
 
 			.navPanelToggle {
 				display: block;
+
 			}
 
 		}
@@ -3048,7 +3081,7 @@ opacity: 1;
 				}
 
 		#navPanel .button {
-			width: 100%;
+			width: 0%;
 		}
 
 		#navPanel .close {
@@ -3112,7 +3145,7 @@ opacity: 1;
 			-ms-transform: translateX(0);
 			transform: translateX(0);
 			box-shadow: 0 0 1.5em 0 rgba(0, 0, 0, 0.2);
-			visibility: visible;
+			
 		}
 
 /* Banner */
@@ -3122,7 +3155,7 @@ opacity: 1;
 	}
 
 	#banner {
-		padding: 16em 0 13em 0;
+		padding: 40% 0 13em 0;
 		height: 100vh;
 		background-attachment: fixed;
 		background-repeat: no-repeat;
@@ -3155,7 +3188,7 @@ opacity: 1;
 		@media screen and (max-width: 1280px) {
 
 			#banner {
-				padding: 14em 0 11em 0;
+				padding: 40% 0 11em 0;
 			}
 
 				#banner h2 {
@@ -3167,7 +3200,7 @@ opacity: 1;
 		@media screen and (max-width: 980px) {
 
 			#banner {
-				padding: 9em 0 7em 0;
+				padding: 0% 0 7em 0;
 			}
 
 		}
@@ -3175,7 +3208,7 @@ opacity: 1;
 		@media screen and (max-width: 736px) {
 
 			#banner {
-				padding: 6em 2em 6em 2em;
+				padding: 40% 2em 6em 2em;
 			}
 
 				#banner br {
@@ -3195,7 +3228,7 @@ opacity: 1;
 		@media screen and (max-width: 480px) {
 
 			#banner {
-				padding: 4em 2em 4em 2em;
+				padding: 40% 2em 4em 2em;
 			}
 
 		}
@@ -3302,3 +3335,104 @@ opacity: 1;
 				}
 
 		}
+
+
+
+
+
+	/* douyin style font for a bit of fun */
+	.douyin-style {
+		position: relative;
+	}
+	  
+	  .douyin-style-font {
+		font-weight: 700;
+		width:450px;
+		position: relative;
+		animation: debounce 1s steps(3) infinite;
+		
+		/** font style **/
+		font-size: 100%;
+		font-style: none;
+		font-weight: italic;
+		letter-spacing: 3px;
+	    font-family: 'Roboto', sans-serif;
+	  }
+	  
+	  .douyin-style-font .douyin-style-title {
+		position: absolute;
+		top: 3px;
+		left: 3px;
+		width: inherit;
+	  }
+	  
+	  .douyin-style-font .douyin-style-title:before {
+		position: absolute;
+		top: -2px;
+		left: -2px;
+		color: #00f5e7;
+		opacity: .8;
+		z-index: 2;
+		content: attr(data-title);
+	  }
+	  
+	  .douyin-style-font .douyin-style-title span{
+		position: relative;
+		color: #FFF;
+		z-index: 3;
+		opacity: .9;
+	  }
+	  
+	  .douyin-style-font .douyin-style-title:after {
+		position: absolute;
+		top: 2px;
+		left: 2px;
+		opacity: .8;
+		color: #ff0068;
+		z-index: 1;
+		content: attr(data-title);
+	  }
+	  
+	  .douyin-style-font.shake {
+		position: absolute;
+		z-index: 9;
+		left: var(--shake-offset);
+		height: var(--shake-height);
+		overflow: hidden;
+		background: transparent;
+		animation: shake-body 1s steps(4) infinite;
+		animation-delay: var(--shake-delay);
+	  }
+	  
+	  .douyin-style-font.shake .douyin-style-title {
+		animation: shake-content 1s steps(4) infinite;
+		animation-delay: var(--shake-delay);
+	  }
+	  
+	  @keyframes debounce {
+		0% {
+		  margin-left: 2px;
+		}
+		0% {
+		  margin-left: -4px;
+		}
+	  }
+	  
+	  @keyframes shake-body {
+		0%   {
+		  top: 0;
+		}
+		100% {
+		  top: 60px;
+		}
+	  }
+	  
+	  @keyframes shake-content {
+		0%   {
+		  margin-top: 0;
+		}
+		100% {
+		  margin-top: -60px;
+		}
+	  }
+
