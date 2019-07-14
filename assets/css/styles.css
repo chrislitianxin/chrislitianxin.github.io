@@ -7,6 +7,18 @@
   }
 }
 
+text-primary {
+  color: #3700B3
+}
+
+text-secondary {
+  color: #018786
+}
+
+text-p {
+  color: #50555c
+}
+
 /*------------------------------------
   Default Styles
 ------------------------------------*/
