@@ -151,9 +151,7 @@
         <div class="row u-content-space-bottom ">
           <div class="col-lg-8 mx-auto mb-5 mb-lg-5 pl-lg-5 text-center">
             <h4 class="mb-3">About me</h4>
-            <p>I am a developer, tech enthusiast and most importantly a problem solver at heart. I love
-              tackling
-              challenging problems and learning new things.
+            <p>I am a developer, tech enthusiast and most importantly a problem solver at heart.
               <p>I have done several internships, where I met
                 and learnt from many talented entrepreneurs, developers and data scientists.
                 I'd be happy to share their <a target="_blank"
@@ -293,12 +291,12 @@
               passionate entrepreneurs, brilliant
               engineers and experienced software architect. They inspired me to keep pushing my limits and redefine
               perfection.</p>
-            <p>I helped designed and built the CV algorithm for improved
-              real-time segmentation, a very important piece for prediction accuracy. I am very proud of the
-              algorithm, which takes countless coffee and grinding through research papers. I also used statistical
-              models to simulate multi-GPU servers under load and used the generated data
-              to present insights into optimal server setup. In addition, I also researched and experimented with
-              optimizing model serving to reduce inference latency.
+            <p>I designed and built the CV algo for improved
+              real-time segmentation after countless coffee and papers grinding. It's very important for our prediction
+              accuracy. I also simulated
+              multi-GPU servers under pressure using stats model such as GMM. The simulated data were
+              analyzed and visualized to gain insights into optimal server setup. In addition, I also experimented with
+              various model serving optimization to reduce inference latency.
             </p>
           </div>
         </div>
@@ -457,34 +455,25 @@
             <img class="u-portfolio__image" src="assets/img/playgrounds/rnnstock.png" alt="Image Description">
             <figcaption class="u-portfolio__info">
               <h6 class="mb-0">Deep Learning in Trading</h6>
-              <small class="d-block">Literature Survey on Deep Learning in Stock Trading</small>
+              <small class="d-block">Literature Survey, RNN</small>
             </figcaption>
-            <a class="u-portfolio__zoom" data-toggle="modal" href="#exampleModalLong"></a>
+            <a class="u-portfolio__zoom" data-toggle="modal" href="#rnnstockModalLong"></a>
           </figure>
 
           <figure class="col-sm-6 col-md-4 u-portfolio__item" data-groups='["its-onlinecourse"]'>
             <img class="u-portfolio__image" src="assets/img/playgrounds/cousera.png" alt="Image Description">
             <figcaption class="u-portfolio__info">
-              <h6 class="mb-0">Deep Learning Specialization</h6>
-              <small class="d-block"></small>
+              <h6 class="mb-0">Online Courses</h6>
+              <small class="d-block">Deep Learning Specialization etc.</small>
             </figcaption>
-            <a class="js-popup-image u-portfolio__zoom" href=""></a>
+            <a class="u-portfolio__zoom" data-toggle="modal" href="#courseraModalLong"></a>
           </figure>
 
-          <figure class="col-sm-6 col-md-4 u-portfolio__item" data-groups='["its-deeplearning"]'>
-            <img class="u-portfolio__image" src="assets/img/playgrounds/neuraltransfer.png" alt="Image Description">
+          <figure class="col-sm-6 col-md-4 u-portfolio__item" data-groups='["its-webapp"]'>
+            <img class="u-portfolio__image" src="assets/img/playgrounds/pwa.png" alt="Image Description">
             <figcaption class="u-portfolio__info">
-              <h6 class="mb-0">Neural Style Transfer</h6>
-              <small class="d-block">Using </small>
-            </figcaption>
-            <a class="js-popup-image u-portfolio__zoom" href=""></a>
-          </figure>
-
-          <figure class="col-sm-6 col-md-4 u-portfolio__item" data-groups='["its-onlinecourse"]'>
-            <img class="u-portfolio__image" src="assets/img/playgrounds/edx.png" alt="Image Description">
-            <figcaption class="u-portfolio__info">
-              <h6 class="mb-0">NB Project</h6>
-              <small class="d-block">Logo</small>
+              <h6 class="mb-0">Progressive Web App</h6>
+              <small class="d-block">Service Worker, Offline Mode</small>
             </figcaption>
             <a class=" u-portfolio__zoom" href=""></a>
           </figure>
@@ -492,20 +481,10 @@
           <figure class="col-sm-6 col-md-4 u-portfolio__item" data-groups='["its-chromeapp"]'>
             <img class="u-portfolio__image" src="assets/img/playgrounds/amber.jpg" alt="Image Description">
             <figcaption class="u-portfolio__info">
-              <h6 class="mb-0">Totoro Theme</h6>
-              <small class="d-block">Chrome theme with minimalist design</small>
+              <h6 class="mb-0">Chrome Extensions</h6>
+              <small class="d-block">Chrome themes and app</small>
             </figcaption>
-            <a class="u-portfolio__zoom"
-              href="https://chrome.google.com/webstore/detail/amber/nbhpeffnfiphiihjoklhegkpdecdoael"></a>
-          </figure>
-
-          <figure class="col-sm-6 col-md-4 u-portfolio__item" data-groups='["its-chromeapp"]'>
-            <img class="u-portfolio__image" src="assets/img/playgrounds/outlook-notifier.jpg" alt="Image Description">
-            <figcaption class="u-portfolio__info">
-              <h6 class="mb-0">Outlook Notifier</h6>
-              <small class="d-block">Simple app for quick access to outlook</small>
-            </figcaption>
-            <a class="js-popup-image u-portfolio__zoom" href=""></a>
+            <a class="u-portfolio__zoom" data-toggle="modal" href="#chromeModalLong"></a>
           </figure>
 
           <figure class="col-sm-6 col-md-4 u-portfolio__item shuffle_sizer"></figure>
@@ -531,7 +510,7 @@
             <i class="far fa-smile"></i>
           </a>
           <p class="lead font-weight-normal mb-5">I am currently looking for full-time opportunities and I'd love to
-            chat. <br> Feel free to drop me an email or LinkedIn message. </p>
+            chat. </p>
           <a class="btn btn-primary u-box-shadow-lg py-3 px-4" href="mailto:chrislitianxin@gmail.com">
             <i class="fas fa-paper-plane"></i> EMAIL ME
           </a>
@@ -542,30 +521,151 @@
   <!-- End of Contact me card-->
 
   <!-- Popup Modal -->
-  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+  <div class="modal fade" id="rnnstockModalLong" tabindex="-1" role="dialog" aria-labelledby="rnnstockModalLongTitle"
     style="display: none;" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <h5 class="modal-title" id="rnnstockModalLongTitle">Deep Learning in Stock Trading</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
+            <span aria-hidden="true">x</span>
           </button>
         </div>
         <div class="modal-body">
-          <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget
-            quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+          <p>I was very interested in the application of deep learning in Finance so I did this as the bonus mark
+            project for my CS489 as I was already reading into the topics at the time.</p>
 
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue
-            laoreet rutrum faucibus dolor auctor.</p>
-
-          <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl
-            consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+          <p>In this project, I researched and summarized various deep learning methods researchers have used in
+            predicting future trends for stock price, including
+            recurrent neural nets such as LSTM and GRU, some NLP methods applied on reddit news etc.
+          </p>
 
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <a type="button" class="btn btn-primary" href="assets/files/dl_paper.pdf" target="_blank">The Project Paper
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End of modal-->
+
+  <!-- Popup Modal -->
+  <div class="modal fade" id="courseraModalLong" tabindex="-1" role="dialog" aria-labelledby="courseraModalLongTitle"
+    style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="courseraModalLongTitle">Deep Learning Specialization</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">x</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>I enjoy taking online courses as a supplementary material to theory-focused school courses. These
+            couses are usually more up to date with most cutting edge applications.
+            I especially liked Standford's CS231N and Deep Learning
+            Specialization by DeepLearing.ai. </p>
+
+          <p>Deep Learning Specialization is a series of 5 courses:
+            <ul>
+              <li>Neural Networks and Deep Learning</li>
+              <li>Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization</li>
+              <li>Structuring Machine Learning Projects</li>
+              <li>Convolutional Neural Networks</li>
+              <li>Sequence Models</li>
+            </ul>
+          </p>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <a type="button" class="btn btn-primary" href="assets/files/coursera_cert.pdf" target="_blank">Course
+            Certificate</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End of modal-->
+
+  <!-- Popup Modal -->
+  <div class="modal fade" id="rnnstockModalLong" tabindex="-1" role="dialog" aria-labelledby="rnnstockModalLongTitle"
+    style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="rnnstockModalLongTitle">Deep Learning in Stock Trading</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">x</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>I was very interested in the application of deep learning in Finance so I did this as the bonus mark
+            project for my CS489 as I was already reading into the topics at the time.</p>
+
+          <p>In this project, I researched and summarized various deep learning methods researchers have used in
+            predicting future trends for stock price, including
+            recurrent neural nets such as LSTM and GRU, some NLP methods applied on reddit news etc.
+          </p>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <a type="button" class="btn btn-primary" href="assets/files/dl_paper.pdf" target="_blank">The Project Paper
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End of modal-->
+
+  <!-- Popup Modal -->
+  <div class="modal fade" id="rnnstockModalLong" tabindex="-1" role="dialog" aria-labelledby="rnnstockModalLongTitle"
+    style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="rnnstockModalLongTitle">Deep Learning in Stock Trading</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">x</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>During my internship at CGI, I worked with UI team lead at a side project after work. It is basically
+            testing out the capability and limitations of a progressive web app to see if it is worth it to convert what
+            we have into a PWA. It's not within DevOps team, but I'm happy I learned something new. </p>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End of modal-->
+
+  <!-- Popup Modal -->
+  <div class="modal fade" id="chromeModalLong" tabindex="-1" role="dialog" aria-labelledby="chromeModalLongTitle"
+    style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="chromeModalLongTitle">Chrome Extensions</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">x</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>I created a few themes and a chrome extension when I was bored. There is only a few thousands active users,
+            but it's fun. Unfortunately the extension is no longer downloadable.</p>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <a type="button" class="btn btn-primary"
+            href="https://chrome.google.com/webstore/detail/amber/nbhpeffnfiphiihjoklhegkpdecdoael" target="_blank">Try
+            a Chrome Theme</a>
         </div>
       </div>
     </div>
