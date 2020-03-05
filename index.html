@@ -4,14 +4,14 @@
 
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-140609709-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140609709-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'UA-140609709-2');
-</script>
+    gtag('config', 'UA-140609709-2');
+  </script>
 
   <title>Hey, Tianxin Here</title>
 
@@ -447,7 +447,7 @@
     <section class="bg-light u-content-space">
       <div id="projects" class="container">
         <header class="text-center w-md-50 mx-auto mb-8">
-          <h2 class="h1">Playground</h2>
+          <h2 class="h1">Things</h2>
           <p class="h5">When I have time, these are the things I indulge myself on. </p>
         </header>
 
@@ -485,7 +485,7 @@
               <h6 class="mb-0">Progressive Web App</h6>
               <small class="d-block">Service Worker, Offline Mode</small>
             </figcaption>
-            <a class=" u-portfolio__zoom" href=""></a>
+            <a class="u-portfolio__zoom" data-toggle="modal" href="#pwaModalLong"></a>
           </figure>
 
           <figure class="col-sm-6 col-md-4 u-portfolio__item" data-groups='["its-chromeapp"]'>
@@ -567,32 +567,43 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="courseraModalLongTitle">Deep Learning Specialization</h5>
+          <h5 class="modal-title" id="courseraModalLongTitle">Online Courses and Certificates</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">x</span>
           </button>
         </div>
         <div class="modal-body">
           <p>I enjoy taking online courses as a supplementary material to theory-focused school courses. These
-            couses are usually more up to date with most cutting edge applications.
-            I especially liked Standford's CS231N and Deep Learning
-            Specialization by DeepLearing.ai. </p>
+            couses are usually more up to date with most cutting edge applications. Links in description.
+          </p>
 
-          <p>Deep Learning Specialization is a series of 5 courses:
+          <p href="assets/files/coursera_cert.pdf">Deep Learning Specialization
             <ul>
-              <li>Neural Networks and Deep Learning</li>
-              <li>Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization</li>
-              <li>Structuring Machine Learning Projects</li>
-              <li>Convolutional Neural Networks</li>
-              <li>Sequence Models</li>
+              <li href="https://coursera.org/share/40b31652406d1697bdb84d7b8f611089">Neural Networks and Deep Learning
+              </li>
+              <li href="https://www.coursera.org/account/accomplishments/verify/2QLEGZFCLCA4">Improving Deep Neural
+                Networks: Hyperparameter tuning, Regularization and Optimization</li>
+              <li href="https://www.coursera.org/account/accomplishments/verify/QEZJPRN2RCWX">Structuring Machine
+                Learning Projects</li>
+              <li href="https://www.coursera.org/account/accomplishments/verify/EDGMKQA29QCV">Convolutional Neural
+                Networks</li>
+              <li href="https://www.coursera.org/account/accomplishments/verify/PM3TNU66DL7U">Sequence Models</li>
+            </ul>
+          </p>
+          <p>Advanced Machine Learning with TensorFlow on Google Cloud Platform Specialization (In Progress)
+            <ul>
+              <li href="https://coursera.org/share/414378d808ef8639af158d30474600d9">End-to-End Machine Learning with
+                TensorFlow on GCP</li>
+              <li href="https://coursera.org/share/ae4658b9f05a75d73c1ef93fda71b653">Production Machine Learning Systems
+              </li>
             </ul>
           </p>
 
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <a type="button" class="btn btn-primary" href="assets/files/coursera_cert.pdf" target="_blank">Course
-            Certificate</a>
+          <!--a type="button" class="btn btn-primary" href="assets/files/coursera_cert.pdf" target="_blank">Course
+            Certificate</a-->
         </div>
       </div>
     </div>
@@ -631,21 +642,21 @@
   <!--End of modal-->
 
   <!-- Popup Modal -->
-  <div class="modal fade" id="rnnstockModalLong" tabindex="-1" role="dialog" aria-labelledby="rnnstockModalLongTitle"
+  <div class="modal fade" id="pwaModalLong" tabindex="-1" role="dialog" aria-labelledby="pwaModalLongTitle"
     style="display: none;" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="rnnstockModalLongTitle">Deep Learning in Stock Trading</h5>
+          <h5 class="modal-title" id="pwaModalLongTitle">Progressive Web App</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">x</span>
           </button>
         </div>
         <div class="modal-body">
-          <p>During my internship at CGI, I worked with UI team lead at a side project after work. It is basically
-            testing out the capability and limitations of a progressive web app to see if it is worth it to convert what
-            we have into a PWA. It's not within DevOps team, but I'm happy I learned something new. </p>
-
+          <p>During my internship at CGI, I worked with UI team lead at a side project to test out the capability and
+            limitations of a progressive web app.
+            It's not within DevOps team, but I'm happy that I learned something new and made friends while doing it.
+          </p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -667,7 +678,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <p>I created a few themes and a chrome extension when I was bored. There is only a few thousands active users,
+          <p>I created a few themes and a chrome extension when I was bored. There is only around 9,000 active users,
             but it's fun. Unfortunately the extension is no longer downloadable.</p>
 
         </div>
